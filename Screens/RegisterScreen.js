@@ -40,10 +40,6 @@ export default function RegisterScreen({ navigation }) {
         onValueChange={text => setEmail(text)}
       />
       <TextField
-        placeholder={'Email'}
-        onValueChange={text => setEmail(text)}
-      />
-      <TextField
         placeholder={'Password'}
         onValueChange={text => setPassword(text)}
         secureTextEntry={true}
