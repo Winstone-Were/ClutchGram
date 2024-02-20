@@ -17,4 +17,4 @@ function Main() {
     )
 }
 
-AppRegistry.registerComponent(appName, () => Main);
+AppRegistry.registerComponent(appName, () => App);

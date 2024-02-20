@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "735688775844",
+    "project_id": "androidfirebase-63c76",
+    "storage_bucket": "androidfirebase-63c76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735688775844:android:2045b1fc89e5fe178a2e31",
+        "android_client_info": {
+          "package_name": "com.clutchgram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735688775844-e9kou43pukdnustt2107ovl2djbljatd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASTDTuYI6hYGxR4Djggnza854iKlFleM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735688775844-e9kou43pukdnustt2107ovl2djbljatd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735688775844:android:96b54e2ce7993f818a2e31",
+        "android_client_info": {
+          "package_name": "com.firebaselogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735688775844-e9kou43pukdnustt2107ovl2djbljatd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASTDTuYI6hYGxR4Djggnza854iKlFleM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735688775844-e9kou43pukdnustt2107ovl2djbljatd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
