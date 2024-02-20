@@ -5,6 +5,7 @@ export default function RegisterScreen() {
   return (
     <View>
       <Text>RegisterScreen</Text>
+      <Text>Hello</Text>
     </View>
   )
 }
