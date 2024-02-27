@@ -2,12 +2,19 @@ import { View, Text, StyleSheet } from 'react-native';
 import React, { useState } from 'react';
 
 
-import { Button, TextField } from 'react-native-ios-kit'
+import { Button, TextField } from 'react-native-ios-kit';
+import auth  from 'firebase/auth';
 
 export default function HomeScreen({navigation}) {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  const  loginAction = async()=>{
+    auth().signInWithEmailAndPassword(email, password).then(()=>{
+      console.log("User created")
+    }).catch(error=> console.error);
+  }
 
   return (
     <View style={styles.container}>
@@ -20,8 +27,8 @@ export default function HomeScreen({navigation}) {
         onValueChange={text => setPassword(password)}
         secureTextEntry={true}
       />
-      <Button rounded inverted centered color="black">
-        Register
+      <Button centered >
+        Login
       </Button>
 
       <Text> Don't Have an account ? </Text>
