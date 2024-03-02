@@ -1,8 +1,7 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import React, { useState } from 'react';
 
-
-import { Button, TextField } from 'react-native-ios-kit';
+import { Button, Text, TextInput } from 'react-native-paper';
 import auth  from 'firebase/auth';
 
 export default function HomeScreen({navigation}) {
@@ -12,27 +11,25 @@ export default function HomeScreen({navigation}) {
 
   const  loginAction = async()=>{
     auth().signInWithEmailAndPassword(email, password).then(()=>{
-      console.log("User created")
+      console.log("User Logged In")
     }).catch(error=> console.error);
   }
 
   return (
     <View style={styles.container}>
-      <TextField
+      <TextInput
         placeholder={'Email'}
         onValueChange={text => setEmail(email)}
       />
-      <TextField
+      <TextInput
         placeholder={'Password'}
         onValueChange={text => setPassword(password)}
         secureTextEntry={true}
       />
-      <Button centered >
-        Login
-      </Button>
+      <Button onPress={()=> loginAction()} > Login</Button>
 
       <Text> Don't Have an account ? </Text>
-      <Button centered onPress={()=> navigation.push("RegisterScreen")}> Register Here </Button> 
+      <Button onPress={()=> navigation.push("RegisterScreen")}> Register Here </Button> 
     </View>
   )
 }        

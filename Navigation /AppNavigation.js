@@ -34,8 +34,5 @@ const AppStack = () => (
 )
 
 export default function AppNavigation() {
-    return (
-        <ThemeProvider>
-            <AppStack />
-        </ThemeProvider>)
+    return (<AppStack />)
 }
