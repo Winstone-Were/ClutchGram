@@ -26,7 +26,7 @@ export default function HomeScreen({navigation}) {
         onValueChange={text => setPassword(password)}
         secureTextEntry={true}
       />
-      <Button onPress={()=> loginAction()} > Login</Button>
+      <Button onPress={()=> loginAction()} >Click Here to Login </Button>
 
       <Text> Don't Have an account ? </Text>
       <Button onPress={()=> navigation.push("RegisterScreen")}> Register Here </Button> 
