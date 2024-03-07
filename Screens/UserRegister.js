@@ -1,15 +1,37 @@
-import { View} from 'react-native';
-import React from 'react';
+import { View } from 'react-native';
+import React, { useState } from 'react';
 import { Button, Text, TextInput } from 'react-native-paper';
+import firestore from '@react-native-firebase/firestore';
 
 
 export default function UserRegister() {
+
+    const [name, setName] = useState('');
+    const [phone, setPhone] = useState('');
+    const [image, setImage] = useState();
+
+    const registerUser = async () => {
+        firestore()
+            .collection('Users')
+            .add({
+                name,
+                phone,
+                image
+            })
+    }
+
     return (
         <View style={styles.container}>
-            <TextInput placeholder='user-name'/>
-            <TextInput placeholder='phone-number'/>
-            <Button> Select Image </Button>
-        </View> 
+            <TextInput
+                placeholder='user-name'
+                onChangeText={text => setName(text)}
+            />
+            <TextInput
+                placeholder='phone-number'
+                onChangeText={text => setPhone(phone)}
+            />
+            <Button onPress={() => registerUser()}> Select Image </Button>
+        </View>
     )
 }
 

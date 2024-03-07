@@ -2131,7 +2131,7 @@
     prompts "^2.4.2"
     semver "^7.5.2"
 
-"@react-native-firebase/app@^18.8.0", "@react-native-firebase/app@18.8.0":
+"@react-native-firebase/app@^18.8.0", "@react-native-firebase/app@18.8.0", "@react-native-firebase/app@19.0.1":
   version "18.8.0"
   resolved "https://registry.npmjs.org/@react-native-firebase/app/-/app-18.8.0.tgz"
   integrity sha512-bVwjop3zLKV1G+ZxyxrdSXVutdSHSM9mngk3qG9W1swmAdeTjvWWIFpyJBf6KlkbKzWbDmLeK7Q+Yc+HLJlg7A==
@@ -2145,6 +2145,11 @@
   integrity sha512-hjeaxCEvujqAiX8uoQCSaoG4n2yof5QlyJWeyoaQcpstIkHtA49JZBpqDJt1lLb1uJumGfr27SyrNzDgHzriOw==
   dependencies:
     plist "^3.1.0"
+
+"@react-native-firebase/firestore@^19.0.1":
+  version "19.0.1"
+  resolved "https://registry.npmjs.org/@react-native-firebase/firestore/-/firestore-19.0.1.tgz"
+  integrity sha512-e/lI2onUuFM5zFVMzEt4e4FFbok/CgACD8jiwPZamtRRDXOaL6xnFeJY4CWvREEp5c8rRDGc4O5OsOU9Gpi/7A==
 
 "@react-native/assets-registry@0.73.1":
   version "0.73.1"
